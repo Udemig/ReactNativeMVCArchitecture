@@ -1,11 +1,11 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {FlatListComponent, StyleSheet, Text, View} from 'react-native';
 import React, {createContext, useState, useContext} from 'react';
 import {create} from 'react-test-renderer';
 
 const DataContext = createContext();
 
 const DataProvider = ({children}) => {
-  const [userAvaible, setUserAvaible] = useState(false);
+  const [userAvaible, setUserAvaible] = useState(true);
   const [productDetailInfo, setProductDetailInfo] = useState();
   const [userInfo, setUserInfo] = useState({
     userName: 'Hasan ÇELİK',

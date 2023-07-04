@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { View, TextInput, Text, TouchableOpacity, Image } from 'react-native';
 
 import Lottie from 'lottie-react-native'
+import { DataContext } from '../../context/context';
 const LoginView = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLoginPress = () => {
-    // Perform login logic here
-  };
+  const {setUserAvaible}=useContext(DataContext)
+
+ 
 
   return (
     <View style={styles.container}>
@@ -32,7 +33,7 @@ const LoginView = () => {
             secureTextEntry={true}
           />
         </View>
-        <TouchableOpacity style={styles.button} onPress={handleLoginPress}>
+        <TouchableOpacity style={styles.button} onPress={()=>setUserAvaible(true)}>
           <Text style={styles.buttonText}>Log In</Text>
         </TouchableOpacity>
       </View>

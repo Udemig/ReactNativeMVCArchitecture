@@ -1,7 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState ,useContext} from 'react';
 import { View, Text, Image, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
-
+import { DataContext } from '../../context/context';
+import auth from '@react-native-firebase/auth'
 const ProfileScreen = ({userInfo}) => {
+  const {setUserAvaible}=useContext(DataContext)
+
+
+
+  console.log(auth().currentUser.uid)
+
+
 
   return (
     <View style={styles.container}>
@@ -36,7 +44,7 @@ const ProfileScreen = ({userInfo}) => {
           value={userInfo.userBio}
        
         />
-        <TouchableOpacity style={styles.button} onPress={() => handleSubmit({name, email, bio, avatar})}>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
           <Text style={styles.buttonText}>Log Out</Text>
         </TouchableOpacity>
       </View>

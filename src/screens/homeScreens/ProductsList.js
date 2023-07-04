@@ -71,7 +71,7 @@ const navigation=useNavigation()
     contentContainerStyle={styles.propertyListContainer}
     data={product}
     renderItem={renderItem}
-    keyExtractor={(item) => item.id}
+    keyExtractor={(item) => item.id} 
   />
   )}
     </View>

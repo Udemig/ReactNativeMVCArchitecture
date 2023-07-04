@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "478914473693",
+    "project_id": "mvcarch-64974",
+    "storage_bucket": "mvcarch-64974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478914473693:android:565dd69972f742a19cb534",
+        "android_client_info": {
+          "package_name": "com.mvcproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478914473693-2q63fve7n7ti20rbrt88libr11044rs4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo7t3H4HnKxblRs17Gf17xvqrWH5IrnwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478914473693-2q63fve7n7ti20rbrt88libr11044rs4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "478914473693-4qrva24mj2n0k3a55k2obinsc945g3qo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.MvcProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
